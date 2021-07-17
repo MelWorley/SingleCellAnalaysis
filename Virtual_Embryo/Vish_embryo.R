@@ -1,7 +1,12 @@
+
+# Instal Distmap for mapping cells based on known expression patterns 
+
 ```{r}
 install_github("rajewsky-lab/DistMap")
 library(DistMap)
 ```
+
+
 
 ```{r}
 raw.data <- as.matrix(read.table( "~pathway/dge_raw.txt", row.names = 1, check.names = FALSE))
@@ -18,7 +23,6 @@ insitu.matrix2 <- as.matrix(read.table( "~pathway/binarized_bdtnp.csv", header =
 colnames(insitu.matrix)
 
 geometry <- as.matrix(read.table( "~pathway/geometry.txt.gz", header = TRUE, check.names = FALSE))
-
 
 
 namegeo <- c("x", "y", "z")
