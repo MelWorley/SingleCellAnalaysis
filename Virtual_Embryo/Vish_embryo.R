@@ -3,10 +3,14 @@
 
 ```{r}
 install_github("rajewsky-lab/DistMap")
-library(DistMap)
+install.packages('scatterplot3d')
 ```
 
+```{r}
+library(DistMap)
+library(scatterplot3d)
 
+```
 
 ```{r}
 raw.data <- as.matrix(read.table( "~pathway/dge_raw.txt", row.names = 1, check.names = FALSE))
